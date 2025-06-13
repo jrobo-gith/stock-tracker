@@ -6,17 +6,13 @@ This is a GUI made in python with PyQt5 to control stock in the larder cupboard 
 
 The GUI is to be made using PyQt5 which I learned developing the [De-Orbiting Satellite](https://github.com/jrobo-gith/De-Orbiting-Satellite-GroupProj) and will include:
 
-\begin{itemize}
-\item Navigation through items in the larder cupboard divided into sections such as spices, fruit, and other things. 
-\item Able to add or remove items.
-\item Able to toggle 're-stock'.
-\end{itemize}
+* Navigation through items in the larder cupboard divided into sections such as spices, fruit, and other things. 
+* Able to add or remove items.
+* Able to toggle 're-stock'.
 
 ## Features
-\begin{itemize}
-\item List of all items in the larder cupboard with images and descriptions
-\item Access to a qualitative stock estimation, with users able to estimate the amount of stock left, i.e, 'half a jar', 'third of a tin'. Along with this, they will see the the number of 'jars' or 'tins' in the cupboard.
-\item Qualitative stock estimation will be coupled with a typical serving amount. 
-\item Users will be able to mark item's as "re-stock", adding the item to the list of items to buy at the end of the week if the typical servings drop below 1 or 2 servings.
-\item The list of items that need re-stocking will be emailed to the person ordering the food for them to add to the order. 
-\end{itemize}
+* List of all items in the larder cupboard with images and descriptions
+* Access to a qualitative stock estimation, with users able to estimate the amount of stock left, i.e, 'half a jar', 'third of a tin'. Along with this, they will see the the number of 'jars' or 'tins' in the cupboard.
+* Qualitative stock estimation will be coupled with a typical serving amount. 
+* Users will be able to mark item's as "re-stock", adding the item to the list of items to buy at the end of the week if the typical servings drop below 1 or 2 servings.
+* The list of items that need re-stocking will be emailed to the person ordering the food for them to add to the order. 
