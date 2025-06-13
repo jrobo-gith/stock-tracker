@@ -11,10 +11,10 @@ subprocess.run(cmd, check=True)
 import json
 
 # Import PyQt5 Packages
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication, QStackedWidget
 
 # Import local files
-
+from windows.main_menu import MainMenuWindow
 
 # Load global settings
 with open("partials/glob-settings.json") as f:
@@ -49,6 +49,12 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Stock Tracker")
         self.resize(glob_settings['screen-height'], glob_settings['screen-width'])
         self.setStyleSheet(f"background-color:{glob_settings['background-color']};")
+
+        self.stacked_widget = QStackedWidget()
+        self.setCentralWidget(self.stacked_widget)
+
+        self.stacked_widget.addWidget(MainMenuWindow(self.stacked_widget))
+
 
 
 if __name__ == "__main__":
